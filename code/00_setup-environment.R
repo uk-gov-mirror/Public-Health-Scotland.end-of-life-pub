@@ -13,7 +13,7 @@
 #
 # Approximate run time - 60 minutes
 # Latest version of R - 4.4.2
-# 24/08/2026 Define list of independent hospices to class as community and NOT as Hospital.
+# 31/08/2026 Define list of independent hospices and to class as community and NOT as Hospital.
 # Do not include in this list the 'NHS specialist palliative care unit' 
 #########################################################################
 
@@ -140,10 +140,12 @@ care_homes <- c("A240V", "F821V", "G105V", "G518V", "G203V", "G315V",
                 "L215V", "L330V", "L365V", "N465R", "N498V", "S312R", 
                 "S327V", "T315S", "T337V", "Y121V")
 
-hospices <- c("C413V", "A227V", "C306V", "C407V", "G583V", "G604V", 
+ind_hospices <- c("C413V", "A227V", "C306V", "C407V", "G583V", "G604V",
              "H220V", "S121K", "V103V", "W102V", "G584V", "T317V",
              "L102K", "S203K", "G501K", "G606V", "L372V")
 
+nhs_hospitals <- c("N183H", "B156C", "T341V",
+                  "B120H", "T202H", "T101H", "Y146H", "T107H", "F704H")
 
 ### 7 - Read in lookup files ----
 # Read in postcode, SIMD and locality lookup files, keep only relevant variables
